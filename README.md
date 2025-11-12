@@ -1,6 +1,6 @@
-✅ Cricket Player Management System — Python + MySQL
+🏏 Cricket Player Management System — Python + MySQL
 
-A console-based application to manage cricket player data using Python, OOP design, and MySQL database connectivity.
+A console-based application for managing cricket players, using Python OOP and MySQL database connectivity.
 
 ✅ Features
 
@@ -33,3 +33,36 @@ dao/
   playerdao_impl.py
 util/
   db_connection.py
+
+✅ How to Run
+
+1.Install dependencies:
+
+pip install pymysql
+
+2.Create MySQL database & table:
+
+CREATE DATABASE cricket;
+USE cricket;
+
+CREATE TABLE cricketplayers (
+    playerid INT AUTO_INCREMENT PRIMARY KEY,
+    PlayerName VARCHAR(100),
+    Country VARCHAR(50),
+    Roles VARCHAR(50),
+    BattingStyle VARCHAR(50),
+    BowlingStyle VARCHAR(50),
+    MatchesPlayed INT,
+    Runs INT,
+    Wickets INT
+);
+
+3.Run the program:
+
+python main.py
+
+✅ Skills Demonstrated
+
+✔ Python + SQL integration
+✔ OOP & Modular Design
+✔ Exception Handling & CRUD operations
